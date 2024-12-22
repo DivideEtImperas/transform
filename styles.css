@@ -1,0 +1,46 @@
+body {
+    background-color: darkgray;
+    background: linear-gradient(to right, rgb(128, 128, 128)0%, rgb(25, 25, 25)100%);
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(2, 2, 251);
+    background: linear-gradient(to left, rgb(2, 2, 251)0%, rgb(83, 144, 241)100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    background: linear-gradient(145deg, rgb(195, 240, 200), rgb(80, 150, 245));
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: rgb(81, 79, 81) solid 0.1rem;
+    box-shadow: 4px 4px 4px;
+}
+
+.circle {
+    animation-duration: 3s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        translate: -500% 0;
+    }
+
+    to {
+        translate: 0 0;
+    }
+
+}
